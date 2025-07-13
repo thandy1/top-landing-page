@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,8 +7,8 @@
 }
 
 body {
-    font-family: "Roboto";
-    font-size: 16px; 
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     line-height: 1.2;
 }
 
@@ -21,7 +21,7 @@ body {
     /* removes default padding top/bottom and 30px padding left and right */
     padding: 0 30px;
     /* for debugging */
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* basic styles for .navbar */
@@ -32,7 +32,7 @@ body {
     height: 60px;
     /* for debugging */
     /* border: 1px solid red; */
-    padding: 16px;
+    padding: 20px;
 }
 
 /* spacing between header logo and nav links */
@@ -50,7 +50,8 @@ body {
 }
 
 /* nav list styles */
-.nav li, a {
+.nav li,
+a {
     text-decoration: none;
     list-style-type: none;
     color: #f9faf8;
@@ -61,15 +62,15 @@ body {
     background-color: #1f2937;
     height: 500px;
     /* for debugging */
-    border: 1px solid red; 
-    padding: 16px;
+    /* border: 1px solid red;  */
+    padding: 20px;
 }
 
 /* styles for main text in hero */
 div .main-text {
-    font-size: 48px; 
-    color: #f9faf8; 
-    font-weight: 900; 
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
 }
 
 /* styles for secondary text in hero */
@@ -81,7 +82,8 @@ div .secondary-text {
 /* styles for container inside hero */
 .hero .container {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
     align-items: center;
     height: 400px;
 }
@@ -89,7 +91,7 @@ div .secondary-text {
 /* styles for specific text */
 .logo-text {
     font-size: x-large;
-    font-size: 900;
+    font-size: 24px;
 }
 
 /* base styles */
@@ -102,10 +104,11 @@ div .secondary-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.hero-container, .placeholder {
+.hero-container,
+.placeholder {
     /* equal sizing to both items, fills up extra space */
     flex: 1;
 }
@@ -113,7 +116,7 @@ div .secondary-text {
 /* header-button styles */
 .header-button {
     margin-top: 8px;
-    color: #f9faf8;;
+    color: #f9faf8;
     border-radius: 10px;
     border: 1px solid #3882f6;
     background-color: #3882f6;
@@ -125,8 +128,8 @@ div .secondary-text {
 /* base styles for .information */
 .information {
     /* for debugging */
-    border: 1px solid blue;
-    padding: 16px;
+    /* border: 1px solid blue; */
+    padding: 20px;
     height: 500px;
 }
 
@@ -134,22 +137,23 @@ div .secondary-text {
 .information h2 {
     font-size: 36px;
     color: #1f2937;
-    font-weight: bold;
+    font-weight: 900;
     /* centers text */
     text-align: center;
 }
 
 .information .container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     height: 400px;
 }
 
 .information .box {
-    flex: 1; 
+    flex: 1;
+    flex-wrap: wrap;
     /* for debugging */
-    /* border: 1px solid #000; */
+    /* border: 1px solid #000;  */
 }
 
 /* center p text underneath blue-boxes */
@@ -166,5 +170,108 @@ div .secondary-text {
     height: 200px;
     /* centers the .blue-box inside the box container */
     margin: 0 auto;
-    
+
+}
+
+/* base styles for .quote section */
+.quote {
+    background-color: #e5e7eb;
+    padding: 20px;
+    height: 500px;
+}
+
+.quote .container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* base styles for .quote-text */
+.quote .quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 200;
+    /* for debugging */
+    /* border: 1px solid blue; */
+}
+
+/* span allows me to manipulate the quote a bit to allow it to start on a new line with the appropriate styles */
+.quote .small-text {
+    display: block;
+    text-align: right;
+    font-weight: 900;
+    font-size: 18px;
+    /* for debugging */
+    /* border: 1px solid blue; */
+
+}
+
+/* base styles for call to action */
+.call-to-action {
+    height: 500px;
+    padding: 20px;
+}
+
+.call-to-action .container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.call-to-action .content {
+    border: 1px solid #3882f6;
+    background-color: #3882f6;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    /* items now have space-between */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-to-action .text-content {
+    color: #fff;
+}
+
+.call-to-action .call-button {
+    color: #f9faf8;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background-color: #3882f6;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #fff;
+    /* height for .footer */
+    height: 60px;
+    /* for debugging */
+    /* border: 1px solid red; */
+    padding: 20px;
+    text-align: center;
+}
+
+.nav a:hover {
+    color: #b9b9b9;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #2a60b8;
+    border-color: #2a60b8; 
+    cursor: pointer;
+}
+
+.call-button:hover {
+    background-color: #2a60b8;
+    cursor: pointer;
 }

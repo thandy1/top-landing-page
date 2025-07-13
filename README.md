@@ -14,7 +14,6 @@ This is a basic landing page built for The Odin Project Foundations course. It u
 - Styling with custom fonts and spacing
 - Building a multi-section webpage from scratch
 
-## Screenshot
+## Live Preview
 
-<!-- Add your screenshot to the images folder and uncomment below -->
-<!-- ![Landing Page Screenshot](images/screenshot.png) -->
+<!-- [Click here]() -->
