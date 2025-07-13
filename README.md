@@ -16,4 +16,4 @@ This is a basic landing page built for The Odin Project Foundations course. It u
 
 ## Live Preview
 
-<!-- [Click here]() -->
+ [Click here](https://thandy1.github.io/top-landing-page/)
